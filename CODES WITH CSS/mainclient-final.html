@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUP Services</title>
+</head>
+<!----------------------------
+[Pages]
+
+(Client Account)
+1.Homepage
+2.Profile
+3.Profile Settings(modal)
+4.View Student (modal)
+5.Fill out form(modal)
+6.Notification 
+7.Notifs Settings(modal)
+8.Work Done Verification
+9.Fill-up feedback & Rating(modal)
+----------------------------->
+<body>
+<!------------------------ Clients Account ---------------------------->
+<!---------------------- Navigation Menu ------------------------------>
+    <nav class="navbar">
+        <div class="navbar-header">
+            <div class="menu-button">
+                <span>Menu</span>
+            </div>
+            <div class="sidebar">
+                <div class="menutitle"><span>TUPC-Services</span></div>
+                <ul>
+                    <li class="active"><a href="#home" class="home">Home</a></li>
+                    <li><a href="#profile" class="profile">Profile</a></li>
+                    <li><a href="#notifs" class="notif">Notifications</a></li>
+                    <li><a href="login.html" class="logout">Logout</a></li>
+                </ul>
+            </div>
+            <div class="navbar-brand">
+                <h1><img src="#" alt="TUP " style="width:2%"> 
+                    Technological University of The Philippines - Services</h1>
+            </div>
+        </div>
+        <div class="search container">
+            <input type="text" name="search" placeholder="Find Services"/>
+            <button type="submit">Search</button>
+        </div>
+    </nav>
+<!---------------------- Home Page ------------------------------>
+    <div class="home" id="home">
+        <h2>Home</h2>
+        <div>
+            <img src="#">
+            <p><b>Sean Monacillo</b></p>
+            <p>I can design a creative and unique website</p>
+            <p>Ratings:</p>
+            <button><a href="#modalform">Apply/Request</a></button>
+            <button>View Profile</button>
+        </div>
+        <div>
+            <img src="#">
+            <p><b>Michael Angelo Rilan</b></p>
+            <p>I can create a working website</p>
+            <p>Ratings:</p>
+            <button><a href="#modalform">Apply/Request</a></button>
+            <button>View Profile</button>
+        </div>
+        <div>
+            <img src="#">
+            <p><b>Romwell Naz</b></p>
+            <p>I can design a responsive website</p>
+            <p>Ratings:</p>
+            <button><a href="#modalform">Apply/Request</a></button>
+            <button>View Profile</button>
+        </div>
+    </div>
+<!------------------- Profile & Profile Settings(modal) ------------------------>
+    <div class="profile" id="profile">
+        <h2>Profile</h2>
+        <img src="#" alt="DP"><br>
+        <label for="fname">Full Name:</label><br>
+        <input type="text" id="fname" name="fname" readonly><br>
+        <label for="addre">Address:</label><br>
+        <input type="text" id="addre" name="addre" readonly><br>
+        <label for="name">Username:</label><br>
+        <input type="text" id="name" name="name" readonly><br>
+        <label for="pswrd">Password:</label><br>
+        <input type="password" id="swrd" name="swrd" readonly><br>
+        <label for="pswrd">Email:</label><br>
+        <input type="email" id="email" name="email" readonly><br>
+        <button class="profile-settings"><a href="#profset">Edit Profile</a></button>
+    </div>
+    <form class="profset" id="profset">
+        <h2>Profile Settings</h2>
+        <img src="#" alt="DP"><br>
+        <button>Change Picture</button><br>
+        <label for="fname">Full Name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="addre">Address:</label><br>
+        <input type="text" id="addre" name="addre"><br>
+        <label for="name">Username:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="pswrd">Password:</label><br>
+        <input type="password" id="swrd" name="swrd"><br>
+        <label for="pswrd">Email:</label><br>
+        <input type="email" id="email" name="email" readonly><br>
+        <button type="submit"><a href="#profile">Save Changes</a></button>
+    </form>
+<!------------------- Fill Out Form(modal) ------------------------>
+    <div class="modalform" id="modalform">
+        <form>
+            <h2>Request Form</h2>
+            <p><strong>Please fill up Requirement to Start your Request</strong> </p>
+            <h4><strong>Note:</strong><i> Once you submit, you cannot request again.
+                You can only request once except when the job is done and you fill up 
+                the feedback and rating form.
+            </i></h4>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="fname" required><br> 
+            <label for="addr">Address:</label><br>
+            <input type="text" id="addr" required><br>
+            <label for="cont">Contact Number:</label><br>
+            <input type="text" id="cont" required><br>
+            <label for="mail">Email:</label><br>
+            <input type="email" id="mail" required><br>
+            <label for="desc">Describe the Service that you need - 
+                Please be Detailed as Possible:</label><br>
+            <textarea type="text" id="desc" placeholder="Write Something..." style="height:100px" required></textarea>
+            <label for="when">When would you like your Service to be delivered/done?:</label><br>
+            <input type="date" id="when" required><br>
+            <label for="price"><span></span>What is your budget for this service?:</label><br>
+            <p><input type="number" id="price" required> Pesos<br></p>
+            <input type="submit"></input>
+        </form>
+    </div>
+<!------------------- Notifs and Settings ------------------------>
+    <div class="notifs" id="notifs">
+        <h2>Notification</h2>
+        <div>
+            <ul>
+                <li><a href="#" class="notif">Sean Monacillo</a></br><label for="notif">Your request has been sent to the seller.
+                    Please wait for the seller to accept the form.</label></li>
+                <li><a href="#" class="notif">Sean Monacillo</a></br><label for="notif">Your request is approved by the seller.
+                    Please view seller's contact info.</label></li>
+                    <button class="notifs-del">Contact Seller</button>
+                <li><a href="#" class="notif">Sean Monacillo</a></br><label for="notif">Your request is declined by the seller.
+                    You can now request form again.</label></li>
+            </ul>
+        </div>
+        <button class="notifs-del">Delete</button>
+        <button class="notifs-del">Delete All</button>
+    </div>
+    <div>
+        <h2>Work Done Verification</h2>
+        <h4><strong>Note:</strong><i> Please submit a Feedback and Rating in order to Request again.</i></h4>
+        <button class="notifs-view">Submit a Feedback</button>
+        <form>
+            <h3>Please Fill Out Form</h3>
+            <label for="feedbck">Feedback:</label><br>
+            <textarea type="text" id="feedbck" placeholder="Write Something..." style="height:100px" required></textarea><br>
+            <label for="rate">Ratings:</label>
+            <select name="rate" id="rate" required>
+                <optgroup label="Ratings">
+                    <option value="5">5</option>
+                    <option value="4">4</option>
+                    <option value="3">3</option>
+                    <option value="2">2</option>
+                    <option value="1">1</option>
+                </optgroup>
+            </select>
+            <input type="submit" value="Submit" class="button">
+        </form>
+    </div>
+</body>
+</html>
